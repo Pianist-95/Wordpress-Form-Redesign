@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div>
+		<input type="text" name="container_1" id="container_1_value" value="">
+		<input type="text" name="container_2" id="container_2_value" value="">
+		<input type="text" name="container_3" id="container_3_value" value="">
+		<input type="text" name="container_4" id="container_4_value" value="">
+	</div>
+	<div class="container" id="container_1" style="display: block">
+		<div class="question">
+			<label>Do you have a phone system?</label>
+		</div>
+		<div class="options">
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="phone_yes" name="phone_yes" value="yes">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>Yes</label>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="phone_no" name="phone_no" value="no">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>No</label>
+				</div>
+			</div>		
+		</div>
+		<div class="bottom">
+			<button class="btn-next" id="has_phone_btn">
+				Start Now
+			</button>
+		</div>
+	</div>
+	<div class="container" id="container_2" style="display: none">
+		<div class="question">
+			<label>How many phones do you need?</label>
+		</div>	
+		<div class="options">
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="amount_1" name="amount_1" value="1">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>1</label>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="amount_2_9" name="amount_2_9" value="2-9">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>2 - 9</label>
+				</div>
+			</div>	
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="amount_2_9" name="amount_10_19" value="10-19">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>10 - 19</label>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="amount_20_49" name="amount_20_49" value="20-49">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>20 - 49</label>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-check">
+					<input type="radio" id="amount_50_over" name="amount_50_over" value="50">
+					<span class="input_ico"></span>
+				</div>
+				<div class="item-label">
+					<label>50+</label>
+				</div>
+			</div>										
+		</div>	
+		<div class="bottom">
+			<button class="btn-next" id="amount_phone_btn">
+				Next
+			</button>
+		</div>				
+	</div>
+	<div class="container" id="container_3" style="display: none">
+		<div class="question">
+			<label>What features do you need?</label>
+		</div>	
+		<div class="options">
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="chk_hold_music" name="chk_hold_music" value="On hold music">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>On hold music</label>
+				</div>
+			</div>
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="chk_voicemail" name="chk_voicemail" value="Voice Mail">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Voice Mail</label>
+				</div>				
+			</div>
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="advance_call_routing" name="advance_call_routing" value="Advanced Call Routing">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Advanced Call Routing</label>
+				</div>				
+			</div>
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="off_site_call_routing" name="off_site_call_routing" value="Off Site Call Routing">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Off Site Call Routing</label>
+				</div>					
+			</div>
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="db_integration" name="db_integration" value="Database Integration">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Database Integration</label>
+				</div>					
+			</div>
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="auto_attendant" name="auto_attendant" value="automated attendant">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Automated Attendant</label>
+				</div>					
+			</div>			
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="call_record" name="call_record" value="Call Recording">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Call Recording</label>
+				</div>					
+			</div>	
+			<div class="item_1">
+				<div class="item_chk_1">
+					<input type="checkbox" id="auto_pay_process" name="auto_pay_process" value="Automated Payment Processing">
+					<i class="helper"></i>
+				</div>
+				<div class="item_lbl_1">
+					<label>Automated Payment Processing</label>
+				</div>					
+			</div>				
+		</div>		
+		<div class="bottom">
+			<button class="btn-next" id="feature_btn">
+				Next
+			</button>
+		</div>
+	</div>
+	<div class="container" id="container_4" style="display: none">
+		<div class="question">
+			<label>Let's find some suppliers</label>
+		</div>	
+		<div class="options">
+			<div class="subheader_green">
+				<strong>Your postcode helps ensure your quotes are as accurate as possible in your area.</strong>
+			</div>
+			<div class="item" style="border: none !important">
+				<input type="text" name="postcode" id="postcode" value="" class="postcode_ipt" placeholder="Your postcode?">
+			</div>
+		</div>
+		<div class="bottom">
+			<button class="btn-next" id="supplier_btn">
+				Next
+			</button>
+		</div>			
+	</div>
+</body>
+</html>
